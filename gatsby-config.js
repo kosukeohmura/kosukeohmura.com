@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Kosuke Ohmura`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Kosuke Ohmura`,
+      summary: '',
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Kosuke Ohmura`,
+    siteUrl: `https://kosukeohmura.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `kosukeohmura`,
     },
   },
   plugins: [

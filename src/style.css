@@ -304,7 +304,7 @@ header li a {
 .bio-text-app-icon {
   margin-right: var(--spacing-1);
   vertical-align: middle;
-  height: var(--fontSize-4);
+  height: var(--fontSize-3);
   border-radius: 0.2237em;
 }
 

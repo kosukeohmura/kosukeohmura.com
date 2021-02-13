@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Bio from "../components/bio"
+import Contacts from "../components/contacts"
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -12,6 +13,7 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO />
       <Bio />
+      <Contacts />
     </Layout>
   )
 }

@@ -346,3 +346,24 @@ header li a {
     list-style-position: inside;
   }
 }
+
+/* Contacts */
+
+.contacts {
+  display: block;
+  margin: 1rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.contacts a {
+  width: 26px;
+  height: 26px;
+  margin: 0 20px;
+  display: inline-block;
+  transition: opacity 200ms ease;
+}
+
+.contacts a:hover {
+  opacity: 0.6;
+}

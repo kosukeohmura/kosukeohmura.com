@@ -11,7 +11,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO />
+      <SEO title={siteTitle}/>
       <Bio />
       <Contacts />
     </Layout>

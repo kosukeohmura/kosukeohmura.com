@@ -1,3 +1,5 @@
+import { getPostPath } from "../lib/blog-helpers"
+
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -46,7 +48,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        path: post.fields.slug,
+        path: getPostPath(post.fields.slug),
         component: blogPost,
         context: {
           id: post.id,

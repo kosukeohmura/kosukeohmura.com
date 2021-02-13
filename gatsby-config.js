@@ -3,7 +3,7 @@ module.exports = {
     title: `Kosuke Ohmura`,
     author: {
       name: `Kosuke Ohmura`,
-      summary: '',
+      summary: 'A software engineer in Tokyo.',
     },
     description: `Kosuke Ohmura`,
     siteUrl: `https://kosukeohmura.com/`,

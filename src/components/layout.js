@@ -65,9 +65,12 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        ©{new Date().getFullYear()} {author?.name || ``}, Built with
-        {` `}
-        <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>
+        <p>
+          ©{new Date().getFullYear()} {author?.name || ``}, Built with
+          {` `}
+          <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>
+          .
+        </p>
       </footer>
     </div>
   )

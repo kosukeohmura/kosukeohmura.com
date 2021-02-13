@@ -84,7 +84,13 @@ body {
 }
 
 footer {
-  padding: var(--spacing-6) var(--spacing-0);
+  padding: var(--spacing-4) var(--spacing-0);
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: var(--spacing-0);
+  font-size: var(--fontSize-0);
 }
 
 hr {

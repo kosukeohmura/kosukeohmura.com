@@ -246,10 +246,6 @@ a:focus {
   padding: var(--spacing-6) var(--spacing-5);
 }
 
-.global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
-}
-
 .global-header {
   margin-bottom: var(--spacing-12);
 }
@@ -307,18 +303,23 @@ header li a {
 }
 
 .bio {
-  display: flex;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: var(--spacing-8);
+  text-align: center;
 }
 
 .bio p {
   margin-bottom: var(--spacing-0);
 }
 
-.bio-avatar {
-  margin-right: var(--spacing-2);
-  margin-bottom: var(--spacing-0);
-  min-width: 32px;
+.bio-text-app-icon {
+  margin-right: var(--spacing-1);
+  vertical-align: middle;
+  height: var(--fontSize-4);
+  border-radius: 0.2237em;
+}
+
+a:hover .bio-text-app-icon {
+  opacity: 0.6;
 }
 
 .blog-post header h1 {

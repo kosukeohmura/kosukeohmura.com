@@ -33,7 +33,13 @@ const SEO = ({ description, meta, title }) => {
   return (
     <Helmet
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={
+        defaultTitle ?
+          defaultTitle == title ?
+            defaultTitle :
+            `%s | ${defaultTitle}` :
+          title
+      }
       meta={[
         {
           name: `description`,

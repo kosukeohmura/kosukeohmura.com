@@ -313,6 +313,10 @@ a:hover .bio-text-app-icon {
   opacity: 0.6;
 }
 
+.blog-post {
+  margin-bottom: var(--spacing-16);
+}
+
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
@@ -323,7 +327,16 @@ a:hover .bio-text-app-icon {
 }
 
 .blog-post-nav ul {
-  margin: var(--spacing-0);
+  margin: var(--spacing-2) var(--spacing-0);
+}
+
+.blog-post-nav ul a {
+  margin-left: var(--spacing-1);
+}
+
+.blog-post-nav li {
+  margin: var(--spacing-2) var(--spacing-0);
+  list-style: none;
 }
 
 .gatsby-highlight {

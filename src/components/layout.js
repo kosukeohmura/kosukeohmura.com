@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
+import ExtLink from "../components/ext-link"
 
 const Layout = ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
@@ -31,22 +32,31 @@ const Layout = ({ location, title, children }) => {
 
   const header = (
     <>
-      <Link className="logo" href="/">
-        <ul>
-          <li>
-            <Image
-              fixed={avatar}
-              alt={author?.name || ``}
-              className="bio-avatar"
-            />
-          </li>
-          <li>
-            <LogoTextTag className="logo-text">
-              {author?.name || ``}
-            </LogoTextTag>
-          </li>
-        </ul>
-      </Link>
+      <ul>
+        <li>
+          <Link className="logo" href="/">
+            <ul>
+              <li>
+                <Image
+                  fixed={avatar}
+                  alt={author?.name || ``}
+                  className="bio-avatar"
+                />
+              </li>
+              <li>
+                <LogoTextTag className="logo-text">
+                  {author?.name || ``}
+                </LogoTextTag>
+              </li>
+            </ul>
+          </Link>
+        </li>
+        <li className="header-link-item">
+          <Link to="/posts">
+            Blog
+          </Link>
+        </li>
+      </ul>
     </>
   )
 
@@ -57,7 +67,7 @@ const Layout = ({ location, title, children }) => {
       <footer>
         ©{new Date().getFullYear()} {author?.name || ``}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>
       </footer>
     </div>
   )

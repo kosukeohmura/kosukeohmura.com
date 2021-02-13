@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import ExtLink from "../components/ext-link"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
     query LayoutQuery {
       avatar: file(absolutePath: { regex: "/icon_32.png/" }) {
@@ -28,7 +28,8 @@ const Layout = ({ location, title, children }) => {
 
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  const LogoTextTag = isRootPath ? 'h1' : 'p'
+  const isPostsPath = `${rootPath}/posts/`
+  const LogoTextTag = (isRootPath || isPostsPath) ? 'h1' : 'p'
 
   const header = (
     <>

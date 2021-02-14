@@ -234,6 +234,13 @@ table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
 
+figcaption {
+  margin: var(--spacing-1) var(--spacing-0);
+  font-size: var(--fontSize-0);
+  text-align: center;
+  color: var(--color-text-light);
+}
+
 /* Link */
 
 a {

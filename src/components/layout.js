@@ -41,7 +41,7 @@ const Layout = ({ location, children }) => {
                 <Image
                   fixed={avatar}
                   alt={author?.name || ``}
-                  className="bio-avatar"
+                  className="logo-avatar"
                 />
               </li>
               <li>

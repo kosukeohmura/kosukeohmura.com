@@ -120,7 +120,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-semibold);
   color: var(--color-heading);
 }
 
@@ -261,26 +261,55 @@ header ul {
   margin: var(--spacing-0);
   display: flex;
   align-items: center;
+  line-height: var(--lineHeight-none);
 }
 
 header li {
   display: inline-block;
   margin: var(--spacing-0);
-  line-height: var(--lineHeight-none);
 }
 
-header li a {
+.global-header a:hover  {
+  opacity: 0.6;
+}
+
+.logo {
   text-decoration: none;
 }
 
+.logo-avatar {
+  margin: var(--spacing-0) var(--spacing-1) var(--spacing-0) var(--spacing-0);
+}
+
+a:hover .logo-avatar {
+  opacity: 0.6;
+}
+
 .logo-text {
+  font-family: var(--font-heading);
+  font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-2);
+  color: var(--color-heading);
   display: inline;
+  letter-spacing: -0.025em;
+}
+
+a:hover .logo-text {
+  opacity: 0.6;
 }
 
 .header-link-item {
-  margin: 0 0 0 auto;
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-0) auto;
 }
+
+.header-link-item a {
+  font-family: var(--font-heading);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--color-heading);
+  text-decoration: none;
+  letter-spacing: -0.025em;
+}
+
 
 .post-list-item {
   margin-bottom: var(--spacing-6);

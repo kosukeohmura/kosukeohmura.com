@@ -54,7 +54,7 @@ const Layout = ({ location, children }) => {
         </li>
         <li className="header-link-item">
           <Link to="/posts">
-            Blog
+            Blog Posts
           </Link>
         </li>
       </ul>

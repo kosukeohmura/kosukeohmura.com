@@ -18,7 +18,7 @@ const Tab = ({ location }) => {
     <ul className="tab">
       {items.map(({ title, to }) => {
         return (
-          <li>
+          <li key={to}>
             <Link to={to} aria-selected={location.pathname === to}>
               {title}
             </Link>

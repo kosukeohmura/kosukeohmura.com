@@ -33,7 +33,7 @@ const Layout = ({ location, children }) => {
 
   const header = (
     <ul>
-      <Link className="logo" href="/">
+      <Link className="logo" to="/">
         <li>
           <Image
             fixed={avatar}

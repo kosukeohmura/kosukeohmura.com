@@ -1,5 +1,5 @@
 import React from "react"
-import ExtLink from "../components/ext-link"
+import ExtLink from "../components/ext-link.tsx"
 
 import GitHub from '../components/svgs/github.tsx'
 import Twitter from '../components/svgs/twitter.tsx'

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-import ExtLink from "../components/ext-link"
+import ExtLink from "../components/ext-link.tsx"
 
 const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`

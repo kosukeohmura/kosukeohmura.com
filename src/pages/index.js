@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Bio from "../components/bio"
+import Bio from "../components/bio.tsx"
 import Contacts from "../components/contacts"
 import Tab from "../components/tab"
 

@@ -37,17 +37,19 @@ const SEO = ({ description, meta, title, image }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const ogImageUrl = `${site.siteMetadata?.siteUrl}${image || avatar.childImageSharp.fixed.src}`
+  const ogImageUrl = `${site.siteMetadata?.siteUrl}${
+    image || avatar.childImageSharp.fixed.src
+  }`
 
   return (
     <Helmet
       title={title}
       titleTemplate={
-        defaultTitle ?
-          defaultTitle === title ?
-            defaultTitle :
-            `%s | ${defaultTitle}` :
-          title
+        defaultTitle
+          ? defaultTitle === title
+            ? defaultTitle
+            : `%s | ${defaultTitle}`
+          : title
       }
       meta={[
         {

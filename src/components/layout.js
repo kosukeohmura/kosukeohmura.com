@@ -29,7 +29,7 @@ const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   const isPostsPath = location.pathname === `${rootPath}posts`
-  const LogoTextTag = (isRootPath || isPostsPath) ? 'h1' : 'span'
+  const LogoTextTag = isRootPath || isPostsPath ? "h1" : "span"
 
   const header = (
     <ul>
@@ -43,9 +43,7 @@ const Layout = ({ location, children }) => {
           />
         </li>
         <li>
-          <LogoTextTag className="logo-text">
-            {author?.name || ``}
-          </LogoTextTag>
+          <LogoTextTag className="logo-text">{author?.name || ``}</LogoTextTag>
         </li>
       </Link>
     </ul>
@@ -59,8 +57,7 @@ const Layout = ({ location, children }) => {
         <p>
           ©{new Date().getFullYear()} {author?.name || ``}, Built with
           {` `}
-          <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>
-          .
+          <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>.
         </p>
       </footer>
     </div>

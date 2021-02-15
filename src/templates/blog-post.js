@@ -10,7 +10,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-  const ogImagePath = post.frontmatter.image && post.frontmatter.image.childImageSharp.fixed.src
+  const ogImagePath =
+    post.frontmatter.image && post.frontmatter.image.childImageSharp.fixed.src
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -37,7 +38,9 @@ const BlogPostTemplate = ({ data, location }) => {
         <ul>
           {next && (
             <li>
-              <div><small>Next Post:</small></div>
+              <div>
+                <small>Next Post:</small>
+              </div>
               <Link to={getPostPath(next.fields.slug)} rel="prev">
                 {next.frontmatter.title}
               </Link>
@@ -45,7 +48,9 @@ const BlogPostTemplate = ({ data, location }) => {
           )}
           {previous && (
             <li>
-              <div><small>Previous Post:</small></div>
+              <div>
+                <small>Previous Post:</small>
+              </div>
               <Link to={getPostPath(previous.fields.slug)} rel="prev">
                 {previous.frontmatter.title}
               </Link>

@@ -5,12 +5,12 @@ import { Link } from "gatsby"
 const Tab = ({ location }) => {
   const items = [
     {
-      title: 'Info',
-      to: '/',
+      title: "Info",
+      to: "/",
     },
     {
-      title: 'Blog Posts',
-      to: '/posts',
+      title: "Blog Posts",
+      to: "/posts",
     },
   ]
 

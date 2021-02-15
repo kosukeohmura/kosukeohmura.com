@@ -8,7 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ExtLink from "./ext-link.tsx"
-import FlexScoreboard from '../components/svgs/flexscoreboard'
+import FlexScoreboard from "../components/svgs/flexscoreboard"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -28,11 +28,9 @@ const Bio = () => {
 
   return (
     <div className="bio">
+      <p>{author?.summary}</p>
       <p>
-        {author?.summary}
-      </p>
-      <p>
-        Developer of{' '}
+        Developer of{" "}
         <ExtLink href="https://flexscoreboard.kosukeohmura.com/">
           <FlexScoreboard className="bio-text-app-icon" />
           FlexScoreboard

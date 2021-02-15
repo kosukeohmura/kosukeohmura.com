@@ -13,7 +13,7 @@ const Tab = ({ location }) => {
       to: '/posts',
     },
   ]
-console.log(location)
+
   return (
     <ul className="tab">
       {items.map(({ title, to }) => {

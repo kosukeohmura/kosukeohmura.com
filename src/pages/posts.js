@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo.tsx"
-import Tab from "../components/tab"
+import Tab from "../components/tab.tsx"
 
 import { getPostPath } from "../lib/blog-helpers"
 

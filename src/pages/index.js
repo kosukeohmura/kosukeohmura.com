@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo.tsx"
 import Bio from "../components/bio.tsx"
 import Contacts from "../components/contacts.tsx"
-import Tab from "../components/tab"
+import Tab from "../components/tab.tsx"
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`

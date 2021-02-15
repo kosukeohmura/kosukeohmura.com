@@ -8,8 +8,8 @@ const Layout = ({ location, children }) => {
     query LayoutQuery {
       avatar: file(absolutePath: { regex: "/icon_32.png/" }) {
         childImageSharp {
-          fixed(width: 32, height: 32, quality: 95) {
-            ...GatsbyImageSharpFixed
+          fixed(width: 32, height: 32, quality: 100) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -42,6 +42,7 @@ const Layout = ({ location, children }) => {
                   fixed={avatar}
                   alt={author?.name || ``}
                   className="logo-avatar"
+                  fadeIn={false}
                 />
               </li>
               <li>

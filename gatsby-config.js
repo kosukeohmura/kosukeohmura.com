@@ -35,6 +35,7 @@ module.exports = {
             options: {
               maxWidth: 630,
               showCaptions: true,
+              withWebp: true,
             },
           },
           {

@@ -268,14 +268,17 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
-header ul {
+.global-header ul {
   margin: var(--spacing-0);
+}
+
+.global-header a {
   display: flex;
   align-items: center;
   line-height: var(--lineHeight-none);
 }
 
-header li {
+.global-header li {
   display: inline-block;
   margin: var(--spacing-0);
 }
@@ -299,7 +302,7 @@ a:hover .logo-avatar {
 .logo-text {
   font-family: var(--font-heading);
   font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-1);
   color: var(--color-heading);
   display: inline;
   letter-spacing: -0.025em;
@@ -309,18 +312,32 @@ a:hover .logo-text {
   opacity: 0.6;
 }
 
-.header-link-item {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-0) auto;
+.tab {
+  text-align: center;
+  margin: var(--spacing-8) auto;
 }
 
-.header-link-item a {
-  font-family: var(--font-heading);
-  font-weight: var(--fontWeight-semibold);
-  color: var(--color-heading);
+.tab li {
+  margin: 0 var(--spacing-4);
+  display: inline-block;
+}
+
+.tab a {
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-1);
   text-decoration: none;
+  color: var(--color-heading);
   letter-spacing: -0.025em;
+  padding-bottom: 1px;
 }
 
+.tab a:hover {
+  border-bottom: 2px solid var(--color-heading);
+}
+
+.tab a[aria-selected="true"] {
+  border-bottom: 2px solid var(--color-heading);
+}
 
 .post-list-item {
   margin-bottom: var(--spacing-6);

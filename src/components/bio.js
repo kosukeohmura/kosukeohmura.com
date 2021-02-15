@@ -8,7 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ExtLink from "../components/ext-link"
-import FlexScoreboard from '../components/svgs/flexscoreboard'
+import FlexScoreboard from '../components/svgs/flexscoreboard.tsx'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`

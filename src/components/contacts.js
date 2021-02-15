@@ -1,10 +1,10 @@
 import React from "react"
 import ExtLink from "../components/ext-link"
 
-import GitHub from '../components/svgs/github'
-import Twitter from '../components/svgs/twitter'
-import Envelope from '../components/svgs/envelope'
-import LinkedIn from '../components/svgs/linkedin'
+import GitHub from '../components/svgs/github.tsx'
+import Twitter from '../components/svgs/twitter.tsx'
+import Envelope from '../components/svgs/envelope.tsx'
+import LinkedIn from '../components/svgs/linkedin.tsx'
 
 const Contacts = () => {
   const contacts = [

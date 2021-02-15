@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/seo.tsx"
 import Bio from "../components/bio.tsx"
 import Contacts from "../components/contacts.tsx"
 import Tab from "../components/tab"

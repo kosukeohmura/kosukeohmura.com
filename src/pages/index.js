@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from "../components/bio.tsx"
-import Contacts from "../components/contacts"
+import Contacts from "../components/contacts.tsx"
 import Tab from "../components/tab"
 
 const Index = ({ data, location }) => {

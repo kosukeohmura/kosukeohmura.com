@@ -281,10 +281,6 @@ a:focus {
   margin: var(--spacing-0);
 }
 
-.global-header a:hover  {
-  opacity: 0.6;
-}
-
 .logo {
   text-decoration: none;
 }

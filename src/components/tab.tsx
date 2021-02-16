@@ -10,7 +10,7 @@ const Tab = ({ location }) => {
     },
     {
       title: "Blog Posts",
-      to: "/posts",
+      to: "/posts/",
     },
   ]
 

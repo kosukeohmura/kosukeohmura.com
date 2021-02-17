@@ -32,21 +32,15 @@ const Layout = ({ location, children }) => {
   const LogoTextTag = isRootPath || isPostsPath ? "h1" : "span"
 
   const header = (
-    <ul>
-      <Link className="logo" to="/">
-        <li>
-          <Image
-            fixed={avatar}
-            alt={author?.name || ``}
-            className="logo-avatar"
-            fadeIn={false}
-          />
-        </li>
-        <li>
-          <LogoTextTag className="logo-text">{author?.name || ``}</LogoTextTag>
-        </li>
-      </Link>
-    </ul>
+    <Link className="logo" to="/">
+      <Image
+        fixed={avatar}
+        alt={author?.name || ``}
+        className="logo-avatar"
+        fadeIn={false}
+      />
+      <LogoTextTag className="logo-text">{author?.name || ``}</LogoTextTag>
+    </Link>
   )
 
   return (

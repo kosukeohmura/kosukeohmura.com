@@ -265,38 +265,27 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-10);
-}
-
-.global-header ul {
-  margin: var(--spacing-0);
-}
-
-.global-header a {
   display: flex;
-  align-items: center;
-  line-height: var(--lineHeight-none);
 }
 
-.global-header li {
-  display: inline-block;
-  margin: var(--spacing-0);
-}
-
-.logo {
+.global-header .logo {
   text-decoration: none;
+  height: 32px;
 }
 
-.logo-avatar {
-  margin: var(--spacing-0) var(--spacing-1) var(--spacing-0) var(--spacing-0);
+.global-header .logo-avatar {
+  margin-right: var(--spacing-1);
 }
 
-.logo-text {
+.global-header .logo-text {
   font-family: var(--font-heading);
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-1);
   color: var(--color-heading);
   display: inline;
   letter-spacing: -0.025em;
+  margin: var(--spacing-0);
+  vertical-align: 8px;
 }
 
 .tab {

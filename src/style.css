@@ -90,7 +90,7 @@ footer {
   text-align: center;
 }
 
-footer p {
+footer small {
   margin-bottom: var(--spacing-0);
   font-size: var(--fontSize-0);
 }

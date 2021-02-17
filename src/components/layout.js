@@ -54,11 +54,11 @@ const Layout = ({ location, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        <p>
+        <small>
           ©{new Date().getFullYear()} {author?.name || ``}, Built with
           {` `}
           <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>.
-        </p>
+        </small>
       </footer>
     </div>
   )

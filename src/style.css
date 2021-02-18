@@ -304,7 +304,6 @@ a:focus {
   text-decoration: none;
   color: var(--color-heading);
   letter-spacing: -0.025em;
-  padding-bottom: 1px;
 }
 
 .tab a:hover {

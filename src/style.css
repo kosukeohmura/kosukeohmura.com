@@ -179,7 +179,7 @@ ul,
 ol {
   margin: var(--spacing-6) var(--spacing-0);
   padding: var(--spacing-0);
-  list-style-position: outside;
+  list-style-position: inside;
   list-style-image: none;
 }
 
@@ -388,10 +388,6 @@ a:hover .bio-text-app-icon {
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     margin-left: var(--spacing-0);
-  }
-  ul,
-  ol {
-    list-style-position: inside;
   }
 }
 

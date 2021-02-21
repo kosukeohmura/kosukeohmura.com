@@ -30,6 +30,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "gatsby-plugin-goatcounter": "^0.4.0",
     "prettier": "2.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

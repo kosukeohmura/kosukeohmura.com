@@ -57,6 +57,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        code: 'kosukeohmura',
+        head: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,

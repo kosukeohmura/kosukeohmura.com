@@ -97,6 +97,9 @@ const SEO = ({ description, meta, title, image }) => {
           content: ogImageUrl,
         },
       ].concat(meta)}
+      link={[
+        {"rel": "apple-touch-icon", "href": `${site.siteMetadata?.siteUrl}apple-touch-icon.png`},
+      ]}
     />
   )
 }

@@ -120,14 +120,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-semibold);
   color: var(--color-heading);
+}
+
+h2,
+h3,
+h4 {
+  font-weight: var(--fontWeight-bold);
+}
+
+h5,
+h6 {
+  font-weight: var(--fontWeight-medium);
 }
 
 h1 {
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-7);
-  color: var(--color-heading-black);
+  color: var(--color-heading-extrabold);
 }
 
 h2 {

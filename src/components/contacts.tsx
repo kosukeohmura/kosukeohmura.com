@@ -6,27 +6,27 @@ import Twitter from "../components/svgs/twitter"
 import Envelope from "../components/svgs/envelope"
 import LinkedIn from "../components/svgs/linkedin"
 
-const Contacts = () => {
+const Contacts = ({ social: { twitter, github, linkedin, email } }) => {
   const contacts = [
     {
       Comp: Twitter,
       alt: "twitter",
-      link: "https://twitter.com/kosukeohmura",
+      link: `https://twitter.com/${twitter}`,
     },
     {
       Comp: GitHub,
       alt: "github",
-      link: "https://github.com/KosukeOhmura",
+      link: `https://github.com/${github}`,
     },
     {
       Comp: LinkedIn,
       alt: "linkedin",
-      link: "https://www.linkedin.com/in/kosukeohmura/",
+      link: `https://www.linkedin.com/in/${linkedin}`,
     },
     {
       Comp: Envelope,
       alt: "envelope",
-      link: "mailto:bnpb81@gmail.com",
+      link: `mailto:${email}`,
     },
   ]
 

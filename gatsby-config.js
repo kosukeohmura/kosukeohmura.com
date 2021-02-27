@@ -13,6 +13,9 @@ module.exports = {
     siteUrl: siteUrl,
     social: {
       twitter: `kosukeohmura`,
+      linkedin: `kosukeohmura`,
+      github: `KosukeOhmura`,
+      email,
     },
   },
   plugins: [

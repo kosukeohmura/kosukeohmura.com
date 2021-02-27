@@ -15,7 +15,7 @@ const Index = ({ data, location }) => {
       <SEO title={siteTitle} />
       <Tab location={location} />
       <Bio />
-      <Contacts />
+      <Contacts social={data.site.siteMetadata?.social} />
     </Layout>
   )
 }
@@ -27,6 +27,12 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        social {
+          twitter
+          linkedin
+          github
+          email
+        }
       }
     }
   }

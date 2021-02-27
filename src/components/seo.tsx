@@ -30,9 +30,7 @@ const SEO = ({ description, meta, title, image }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const ogImageUrl = `${site.siteMetadata?.siteUrl}${
-    image || `/icon_256.png`
-  }`
+  const ogImageUrl = `${site.siteMetadata?.siteUrl}${image || `/icon_256.png`}`
 
   return (
     <Helmet
@@ -91,7 +89,10 @@ const SEO = ({ description, meta, title, image }) => {
         },
       ].concat(meta)}
       link={[
-        {"rel": "apple-touch-icon", "href": `${site.siteMetadata?.siteUrl}apple-touch-icon.png`},
+        {
+          rel: "apple-touch-icon",
+          href: `${site.siteMetadata?.siteUrl}apple-touch-icon.png`,
+        },
       ]}
     />
   )

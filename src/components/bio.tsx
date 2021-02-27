@@ -7,7 +7,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import ExtLink from "./ext-link.tsx"
+import ExtLink from "./ext-link"
 import FlexScoreboard from "../components/svgs/flexscoreboard"
 
 const Bio = () => {

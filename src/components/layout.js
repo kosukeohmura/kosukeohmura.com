@@ -25,7 +25,11 @@ const Layout = ({ location, children }) => {
 
   const header = (
     <Link className="logo" to="/">
-      <img className="logo-avatar" src={`${data.site.siteMetadata.siteUrl}/icon_32.png`} alt={author?.name || ``}/>
+      <img
+        className="logo-avatar"
+        src={`${data.site.siteMetadata.siteUrl}/icon_32.png`}
+        alt={author?.name || ``}
+      />
       <LogoTextTag className="logo-text">{author?.name || ``}</LogoTextTag>
     </Link>
   )

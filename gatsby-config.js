@@ -1,12 +1,16 @@
+const siteUrl = `https://kosukeohmura.com/`
+const authorName = `Kosuke Ohmura`
+const email = `info@kosukeohmura.com`
+
 module.exports = {
   siteMetadata: {
-    title: `Kosuke Ohmura`,
+    title: authorName,
     author: {
-      name: `Kosuke Ohmura`,
-      summary: "A software engineer in Tokyo.",
+      name: authorName,
+      summary: `A software engineer in Tokyo.`,
     },
-    description: `Kosuke Ohmura`,
-    siteUrl: `https://kosukeohmura.com/`,
+    description: authorName,
+    siteUrl: siteUrl,
     social: {
       twitter: `kosukeohmura`,
     },
@@ -57,9 +61,67 @@ module.exports = {
         head: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  url: `${site.siteMetadata.siteUrl}/posts${edge.node.fields.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/posts${edge.node.fields.slug}`,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt(truncate: true)
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: `/posts/rss.xml`,
+            title: `All Posts | ${authorName}`,
+            description: `All Posts | ${authorName}`,
+            match: `^/posts/`,
+            feed_url: `${siteUrl}posts/rss.xml`,
+            site_url: `${siteUrl}posts/`,
+            image_url: `${siteUrl}icon_32.png`,
+            managingEditor: email,
+            webMaster: email,
+            copyright: authorName,
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

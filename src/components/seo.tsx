@@ -11,16 +11,9 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ description, meta, title, image }) => {
-  const { avatar, site } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
-        avatar: file(absolutePath: { regex: "/icon_256.png/" }) {
-          childImageSharp {
-            fixed(width: 256, height: 256, quality: 100) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
-          }
-        }
         site {
           siteMetadata {
             title
@@ -38,7 +31,7 @@ const SEO = ({ description, meta, title, image }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const ogImageUrl = `${site.siteMetadata?.siteUrl}${
-    image || avatar.childImageSharp.fixed.src
+    image || `/icon_256.png`
   }`
 
   return (

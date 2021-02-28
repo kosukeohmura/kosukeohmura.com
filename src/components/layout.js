@@ -1,13 +1,20 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import Image from "gatsby-image"
 import ExtLink from "../components/ext-link.tsx"
 
 const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
     query LayoutQuery {
+      avatar: file(absolutePath: { regex: "/icon_32.png/" }) {
+        childImageSharp {
+          fixed(width: 32, height: 32, quality: 100) {
+            ...GatsbyImageSharpFixed_noBase64
+          }
+        }
+      }
       site {
         siteMetadata {
-          siteUrl
           author {
             name
           }
@@ -17,6 +24,7 @@ const Layout = ({ location, children }) => {
   `)
 
   const author = data.site.siteMetadata?.author
+  const avatar = data?.avatar?.childImageSharp?.fixed
 
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -25,10 +33,11 @@ const Layout = ({ location, children }) => {
 
   const header = (
     <Link className="logo" to="/">
-      <img
-        className="logo-avatar"
-        src={`${data.site.siteMetadata.siteUrl}/icon_32.png`}
+      <Image
+        fixed={avatar}
         alt={author?.name || ``}
+        className="logo-avatar"
+        fadeIn={false}
       />
       <LogoTextTag className="logo-text">{author?.name || ``}</LogoTextTag>
     </Link>

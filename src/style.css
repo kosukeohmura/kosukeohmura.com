@@ -200,9 +200,9 @@ p {
 
 ul,
 ol {
-  margin: var(--spacing-4) var(--spacing-0);
+  margin: var(--spacing-4) var(--spacing-0) var(--spacing-4) var(--spacing-6);
   padding: var(--spacing-0);
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-image: none;
 }
 

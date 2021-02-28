@@ -298,11 +298,15 @@ a:focus {
 }
 
 .global-header .logo {
+  --logo-avatar-length: 32px;
+
+  height: var(--logo-avatar-length);
   text-decoration: none;
-  height: 32px;
 }
 
 .global-header .logo-avatar {
+  height: var(--logo-avatar-length);
+  width: var(--logo-avatar-length);
   margin-right: var(--spacing-1);
 }
 

@@ -216,12 +216,6 @@ li > p {
   margin-bottom: var(--spacing-1);
 }
 
-/* AdHoc fix for https://github.com/gatsbyjs/gatsby/issues/10870 */
-li > p {
-  margin-top: calc(var(--spacing-6) * -1);
-  margin-left: var(--spacing-6);
-}
-
 li *:last-child {
   margin-bottom: var(--spacing-0);
 }

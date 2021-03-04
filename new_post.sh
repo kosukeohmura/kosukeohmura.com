@@ -2,8 +2,8 @@
 
 dir="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
-now=$(date '+%Y%m%d%H%M')
-posted_at=$(date '+%Y-%m-%d %H:%M +0900')
+now=$(date -u '+%Y%m%d%H%M')
+posted_at=$(date -u '+%Y-%m-%dT%H:%M:00Z')
 
 mkdir content/blog/$now
 cat - << EOS > content/blog/$now/index.md

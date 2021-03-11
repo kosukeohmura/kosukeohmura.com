@@ -12,7 +12,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={siteTitle} />
+      <SEO title={siteTitle} description="A software engineer in Tokyo. Developer of FlexScoreboard App." />
       <Tab location={location} />
       <Bio />
       <Contacts social={data.site.siteMetadata?.social} />

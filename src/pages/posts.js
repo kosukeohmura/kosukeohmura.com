@@ -26,7 +26,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="All posts" description="All blog posts written by Kosuke Ohmura." />
       <Tab location={location} />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {

@@ -7,7 +7,6 @@ module.exports = {
     title: authorName,
     author: {
       name: authorName,
-      summary: `A software engineer in Tokyo.`,
     },
     description: authorName,
     siteUrl: siteUrl,

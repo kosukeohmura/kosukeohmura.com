@@ -11,24 +11,9 @@ import ExtLink from "./ext-link"
 import FlexScoreboard from "../components/svgs/flexscoreboard"
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            summary
-          }
-        }
-      }
-    }
-  `)
-
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-
   return (
     <div className="bio">
-      <p>{author?.summary}</p>
+      <p>A software engineer in Tokyo.</p>
       <p>
         Developer of{" "}
         <ExtLink href="https://flexscoreboard.kosukeohmura.com/">

@@ -51,6 +51,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "new_post": "./new_post.sh"
+    "new_post": "./new_post.sh",
+    "update_posted_at": "./update_posted_at.sh"
   }
 }

@@ -1,11 +1,13 @@
 #!/bin/bash
 
+set -ue -o pipefail
+
 dir="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 now=$(date -u '+%Y%m%d%H%M')
 posted_at=$(date -u '+%Y-%m-%dT%H:%M:00Z')
 
-mkdir content/blog/$now
+mkdir "$dir"/content/blog/$now
 cat - << EOS > content/blog/$now/index.md
 ---
 title: ""

@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-import ExtLink from "../components/ext-link.tsx"
 
 const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
@@ -49,9 +48,7 @@ const Layout = ({ location, children }) => {
       <main>{children}</main>
       <footer>
         <small>
-          ©{new Date().getFullYear()} {author?.name || ``}, Built with
-          {` `}
-          <ExtLink href="https://www.gatsbyjs.com">Gatsby</ExtLink>.
+          © {new Date().getFullYear()} {author?.name || ``}
         </small>
       </footer>
     </div>

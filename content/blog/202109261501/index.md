@@ -5,7 +5,7 @@ description: "AtCoder で茶色になった。"
 image: "atcoder_brown.png"
 ---
 
-[7 ヶ月前に始めた AtCoder](https://kosukeohmura.com/posts/202102280035/) でようやく茶色になった。嬉しい。
+[7 ヶ月前に始めた AtCoder](../202102280035) でようやく茶色になった。嬉しい。
 
 ![ようやくたどり着いた](atcoder_brown.png)
 

@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "kosukeohmura.com",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Koske Ohmura's personal site",
+  "version": "1.0.0",
+  "author": "Koske Ohmura <info@kosukeohmura.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/KosukeOhmura/kosukeohmura.com/issues"
   },
   "dependencies": {
     "gatsby": "^2.32.3",
@@ -33,7 +33,7 @@
     "gatsby-plugin-goatcounter": "^0.4.0",
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/KosukeOhmura/kosukeohmura.com#readme",
   "keywords": [
     "gatsby"
   ],
@@ -41,7 +41,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/KosukeOhmura/kosukeohmura.com.git"
   },
   "scripts": {
     "build": "gatsby build",

@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Koske Ohmura <info@kosukeohmura.com>",
   "bugs": {
-    "url": "https://github.com/KosukeOhmura/kosukeohmura.com/issues"
+    "url": "https://github.com/kosukeohmura/kosukeohmura.com/issues"
   },
   "dependencies": {
     "gatsby": "^2.32.3",
@@ -33,7 +33,7 @@
     "gatsby-plugin-goatcounter": "^0.4.0",
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/KosukeOhmura/kosukeohmura.com#readme",
+  "homepage": "https://github.com/kosukeohmura/kosukeohmura.com#readme",
   "keywords": [
     "gatsby"
   ],
@@ -41,7 +41,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KosukeOhmura/kosukeohmura.com.git"
+    "url": "git+https://github.com/kosukeohmura/kosukeohmura.com.git"
   },
   "scripts": {
     "build": "gatsby build",

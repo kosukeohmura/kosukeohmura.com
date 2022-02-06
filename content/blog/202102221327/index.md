@@ -23,7 +23,7 @@ image: "top.png"
 
 ## 導入する
 
-コードベースの変更は Gatsby 用のプラグイン [gatsby-plugin-goatcounter](https://www.gatsbyjs.com/plugins/gatsby-plugin-goatcounter/) が存在するのでそれを使うだけで終わった。ソースコードの変更は[こちら](https://github.com/KosukeOhmura/kosukeohmura.com/commit/46535b337506f49538bdeade5401c2ef49b5c8e6)。デプロイして自分でサイトにアクセスすると、数秒後にはダッシュボードにアクセスが表示された。簡素だがサクサク動いて使い勝手が良い。
+コードベースの変更は Gatsby 用のプラグイン [gatsby-plugin-goatcounter](https://www.gatsbyjs.com/plugins/gatsby-plugin-goatcounter/) が存在するのでそれを使うだけで終わった。ソースコードの変更は[こちら](https://github.com/kosukeohmura/kosukeohmura.com/commit/46535b337506f49538bdeade5401c2ef49b5c8e6)。デプロイして自分でサイトにアクセスすると、数秒後にはダッシュボードにアクセスが表示された。簡素だがサクサク動いて使い勝手が良い。
 
 ![必要十分なダッシュボード](dashboard.png)
 

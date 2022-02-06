@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://kosukeohmura.com">
-    <img alt="kosukeohmura" src="https://github.com/KosukeOhmura/kosukeohmura.com/blob/master/static/icon_256.png" width="64" />
+    <img alt="kosukeohmura" src="https://github.com/kosukeohmura/kosukeohmura.com/blob/master/static/icon_256.png" width="64" />
   </a>
 </p>
 <h1 align="center">

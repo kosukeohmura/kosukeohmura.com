@@ -26,4 +26,4 @@ Starter を自分好みの見た目にするためにちょっといじった。
 
 ## ソースコード
 
-[こちら](https://github.com/KosukeOhmura/kosukeohmura.com)に置いてあるので、気になる方は見てみてください。
+[こちら](https://github.com/kosukeohmura/kosukeohmura.com)に置いてあるので、気になる方は見てみてください。

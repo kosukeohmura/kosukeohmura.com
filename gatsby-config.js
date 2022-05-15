@@ -13,7 +13,7 @@ module.exports = {
     social: {
       twitter: `kosukeohmura`,
       linkedin: `kosukeohmura`,
-      github: `KosukeOhmura`,
+      github: `kosukeohmura`,
       email,
     },
   },

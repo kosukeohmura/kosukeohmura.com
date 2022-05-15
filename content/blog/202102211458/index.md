@@ -29,4 +29,4 @@ public リポジトリだと無料なのでビルド時間を気にしなくて�
 
 ソースコードはこちら。
 
-- [Deploy by GitHub Actions · KosukeOhmura/kosukeohmura.com@f90df27](https://github.com/KosukeOhmura/kosukeohmura.com/commit/f90df2785d36edd97ddba904604ca0759b672100)
+- [Deploy by GitHub Actions · kosukeohmura/kosukeohmura.com@f90df27](https://github.com/kosukeohmura/kosukeohmura.com/commit/f90df2785d36edd97ddba904604ca0759b672100)

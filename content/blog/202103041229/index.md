@@ -17,7 +17,7 @@ Gatsby の GraphQL では `date` をフォーマットする `formatString` と�
 
 ## このブログは UTC でいきます
 
-日本時間に統一されるようにしようかと思ったが、別に JST にこだわる必要ないよね、と開き直って UTC に統一することにした。コミットは[こちら](https://github.com/KosukeOhmura/kosukeohmura.com/commit/14ff90c8dd41435bca2557bc6fe6c529f9ba6f86)。記事のテンプレを生成する簡単なシェルスクリプトを少し修正しただけ。
+日本時間に統一されるようにしようかと思ったが、別に JST にこだわる必要ないよね、と開き直って UTC に統一することにした。コミットは[こちら](https://github.com/kosukeohmura/kosukeohmura.com/commit/14ff90c8dd41435bca2557bc6fe6c529f9ba6f86)。記事のテンプレを生成する簡単なシェルスクリプトを少し修正しただけ。
 
 ### 参考
 

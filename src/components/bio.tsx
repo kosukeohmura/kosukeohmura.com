@@ -13,7 +13,7 @@ import FlexScoreboard from "../components/svgs/flexscoreboard"
 const Bio = () => {
   return (
     <div className="bio">
-      <p>A software engineer in Tokyo.</p>
+      <p>Software engineer from Japan, currently based in Thailand.</p>
       <p>
         Developer of{" "}
         <ExtLink href="https://flexscoreboard.kosukeohmura.com/">

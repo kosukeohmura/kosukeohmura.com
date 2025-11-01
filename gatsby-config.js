@@ -64,13 +64,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-goatcounter`,
-      options: {
-        code: "kosukeohmura",
-        head: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

@@ -94,7 +94,13 @@ const SEO = ({ description, meta, title, image }) => {
           href: `${site.siteMetadata?.siteUrl}apple-touch-icon.png`,
         },
       ]}
-    />
+    >
+      <script
+        data-goatcounter="https://kosukeohmura.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      ></script>
+    </Helmet>
   )
 }
 

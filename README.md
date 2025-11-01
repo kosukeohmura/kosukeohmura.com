@@ -13,18 +13,18 @@ Kosuke Ohmura's personal site created with [gatsby-starter-blog](https://github.
 
 1. **Create a new markdown file.**
 
-    ```shell
-    npm run new_post
-    ```
+   ```shell
+   npm run new_post
+   ```
 
 1. **Run local server for debugging and start editing the markdown.**
 
-    The server will start at `http://localhost:8000`.
+   The server will start at `http://localhost:8000`.
 
-    ```shell
-    npm run start
-    ```
+   ```shell
+   npm run start
+   ```
 
 1. **Deploy**
 
-    The site will be deployed to [kosukeohmura.com](https://kosukeohmura.com) by GitHub Actions when `master` branch be updated.
+   The site will be deployed to [kosukeohmura.com](https://kosukeohmura.com) by GitHub Actions when `master` branch be updated.

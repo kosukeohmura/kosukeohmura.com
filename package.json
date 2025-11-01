@@ -1,9 +1,9 @@
 {
   "name": "kosukeohmura.com",
   "private": true,
-  "description": "Koske Ohmura's personal site",
+  "description": "Kosuke Ohmura's personal site",
   "version": "1.0.0",
-  "author": "Koske Ohmura <info@kosukeohmura.com>",
+  "author": "Kosuke Ohmura <info@kosukeohmura.com>",
   "bugs": {
     "url": "https://github.com/kosukeohmura/kosukeohmura.com/issues"
   },

@@ -7,7 +7,7 @@
   kosukeohmura.com
 </h1>
 
-Koske Ohmura's personal site created with [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
+Kosuke Ohmura's personal site created with [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
 
 ## 🚀 Creating a new blog post
 

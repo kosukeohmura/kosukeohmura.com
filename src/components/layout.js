@@ -8,7 +8,7 @@ const Layout = ({ location, children }) => {
       avatar: file(absolutePath: { regex: "/icon_32.png/" }) {
         childImageSharp {
           fixed(width: 32, height: 32, quality: 100) {
-            ...GatsbyImageSharpFixed_noBase64
+            ...GatsbyImageSharpFixed_tracedSVG
           }
         }
       }

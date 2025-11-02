@@ -11,7 +11,7 @@ module.exports = {
     description: authorName,
     siteUrl: siteUrl,
     social: {
-      twitter: `kosukeohmura`,
+      x: `kosukeohmura`,
       linkedin: `kosukeohmura`,
       github: `kosukeohmura`,
       email,
@@ -61,13 +61,6 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-goatcounter`,
-      options: {
-        code: "kosukeohmura",
-        head: true,
       },
     },
     {

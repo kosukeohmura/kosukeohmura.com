@@ -11,7 +11,7 @@ module.exports = {
     description: authorName,
     siteUrl: siteUrl,
     social: {
-      twitter: `kosukeohmura`,
+      x: `kosukeohmura`,
       linkedin: `kosukeohmura`,
       github: `kosukeohmura`,
       email,

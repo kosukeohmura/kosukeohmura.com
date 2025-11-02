@@ -20,7 +20,7 @@ const SEO = ({ description, meta, title, image }) => {
             description
             siteUrl
             social {
-              twitter
+              x
             }
           }
         }

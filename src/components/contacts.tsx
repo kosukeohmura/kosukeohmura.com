@@ -2,16 +2,16 @@ import React from "react"
 import ExtLink from "../components/ext-link"
 
 import GitHub from "../components/svgs/github"
-import Twitter from "../components/svgs/twitter"
+import X from "../components/svgs/x"
 import Envelope from "../components/svgs/envelope"
 import LinkedIn from "../components/svgs/linkedin"
 
-const Contacts = ({ social: { twitter, github, linkedin, email } }) => {
+const Contacts = ({ social: { x, github, linkedin, email } }) => {
   const contacts = [
     {
-      Comp: Twitter,
-      alt: "twitter",
-      link: `https://twitter.com/${twitter}`,
+      Comp: X,
+      alt: "x",
+      link: `https://x.com/${x}`,
     },
     {
       Comp: GitHub,
